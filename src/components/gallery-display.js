@@ -1,17 +1,26 @@
 import React from 'react';
+import Header from './header';
 
 const GalleryDisplay = props => {
-    return (
-        <div className="display">
-            <img
-                src={
-                    'https://lh5.ggpht.com/vV5DJTpPEL5dOCFmytemK61JuTSX_9SQKI11U7uAhm4WB48zX6oyv8rXbBwYrSb7tPXUhERrROL8k2P9C5Q0NiOpCbs=s0' ||
-                    props.display
-                }
-                alt=""
-            />
-        </div>
-    );
+    if (props.display) {
+        return (
+            <div className="display">
+                <Header />
+                <div className="container">
+                    <img src={props.display} alt="" />
+                </div>
+            </div>
+        );
+    } else {
+        return (
+            <div className="display">
+                <Header />
+                <div className="container">
+                    <p>Click an Image to view its content</p>
+                </div>
+            </div>
+        );
+    }
 };
 
 export default GalleryDisplay;
