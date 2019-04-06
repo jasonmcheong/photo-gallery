@@ -14,7 +14,7 @@ class App extends Component {
 
     state = {
         gallery: [],
-        displayURL: '',
+        displayObj: '',
         isLoading: true,
     };
 

@@ -16,7 +16,7 @@ const GalleryDisplay = props => {
             <div className="display">
                 <Header />
                 <div className="container">
-                    <p>Click an Image to view its content</p>
+                    <p>Click an image to expand</p>
                 </div>
             </div>
         );
